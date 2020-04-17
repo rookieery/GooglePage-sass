@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+@mixin location($height,$width,$left,$top) {
+    position: absolute;
+    height: $height;
+    width: $width;
+    left: $left;
+    top: $top;
+}
+.frame{
+    @include location(400px, 600px, 50%, 64px);
+    margin-left: -300px;
+}
+.label{
+    position: absolute;
+    height: 48px;
+    width: 130px;
+    right: 16px;
+    top: 8px;
+}
+.email,.picture{
+    line-height: 48px;
+    font-size: x-small;
+    outline: none;
+    color:$labelTextColor;
+    text-decoration: none;
+    padding-right: 8px;
+    padding-left: 4px;
+}
+.email:hover,.picture:hover{
+    opacity: .85;
+    text-decoration: underline;
+}
+.application{
+    @include location(40px, 40px,70%, 6%);
+}
+.application:hover{
+    border-radius: 50%;
+    background-color: $labelApplicationHoverColor;
+}
+svg {
+    @include location(20px, 20px,50%, 50%);
+    margin-top: -11px;
+    margin-left: -11px;
+    fill:$labelSvgColor;
+}
+.searchButton{
+    position: absolute;
+    padding: 5px;
+    width: 85px;
+    font-family: Arial;
+    color: $searchButtonTextColor;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    top:80%;
+    right: 8px;
+    background-color: $searchButtonBackgroundColor;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.searchButton:hover{
+    background-color: $searchButtonBackgroundHoverColor;
+}
+.logo {
+    @include location(196px, 550px, 50%, 20%);
+    background-image: url("googlepng.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: -(550px/2);
+    margin-top: -70px;
+    cursor: pointer;
+}
+
+.box {
+    @include location(44px,584px,50%,65%);
+    background-color:$boxBackgroundColor; 
+    box-shadow: 0 1px 6px 0 $boxShadowColor;
+    border-radius: 22px;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: -292px;
+    margin-top: -10px;
+}
+
+.box-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    font-family: "icomoon";
+    background-color: $boxBackgroundColor; 
+    color:$iconColor; 
+    margin: auto 0;
+    margin-left: 16px;
+}
+
+.box-text {
+    width: 500px;
+    height: 44px;
+    position: absolute;
+    left: 40px;
+    line-height: 44px;
+    background-color:$boxBackgroundColor; 
+    color:$textColor;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+.box-microphone {
+    font-family: "icomoon";
+    font-size: 18px;
+    color:$microphoneColor;
+    background-color: $boxBackgroundColor; 
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

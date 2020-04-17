@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot");
+  src: url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg");
+}
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 92px;
+  width: 272px;
+  background-image: url("google.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin-left: -136px;
+  margin-top: 15px;
+}
+
+.box {
+  height: 44px;
+  width: 584px;
+  background-color: white;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -292px;
+  margin-top: -10px;
+}
+
+.box-icon {
+  font-family: "icomoon";
+  color: #757575;
+  bottom: 0;
+  height: 24px;
+  margin: auto 0;
+  margin-left: 16px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.box-text {
+  width: 500px;
+  height: 44px;
+  position: absolute;
+  left: 40px;
+  line-height: 44px;
+  color: #757575;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.box-microphone {
+  font-family: "icomoon";
+  font-size: 18px;
+  color: yellowgreen;
+  background-color: white;
+  margin-right: 16px;
+  border: none;
+  cursor: pointer;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*# sourceMappingURL=goole.css.map */

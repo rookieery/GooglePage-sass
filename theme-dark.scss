@@ -1,0 +1,18 @@
+
+$bodyBackgroundColor: rgb(70, 70, 70);
+$boxBackgroundColor: rgb(70, 70, 70);
+$labelTextColor: rgba(245, 245, 245, 0.87);
+$labelSvgColor:#d8dfe7;
+$labelApplicationHoverColor:rgba(228, 228, 228, 0.25);
+$iconColor:rgb(236, 236, 236);
+$textColor:rgb(236, 236, 236);
+$microphoneColor:yellowgreen;
+$boxShadowColor:rgba(215, 222, 243, 0.28);
+$searchButtonTextColor: rgb(70, 70, 70);
+$searchButtonBackgroundColor:rgb(0, 145, 202);
+$searchButtonBackgroundHoverColor:rgb(57, 190, 243);
+
+.theme-dark {
+    @import './variables.scss';
+    background-color: $bodyBackgroundColor
+}

@@ -1,0 +1,287 @@
+.theme-default {
+  background-color: white;
+}
+.theme-default * {
+  box-sizing: border-box;
+}
+.theme-default .frame {
+  position: absolute;
+  height: 400px;
+  width: 600px;
+  left: 50%;
+  top: 64px;
+  margin-left: -300px;
+}
+.theme-default .label {
+  position: absolute;
+  height: 48px;
+  width: 130px;
+  right: 16px;
+  top: 8px;
+}
+.theme-default .email, .theme-default .picture {
+  line-height: 48px;
+  font-size: x-small;
+  outline: none;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  padding-right: 8px;
+  padding-left: 4px;
+}
+.theme-default .email:hover, .theme-default .picture:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+.theme-default .application {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 70%;
+  top: 6%;
+}
+.theme-default .application:hover {
+  border-radius: 50%;
+  background-color: rgba(60, 64, 67, 0.08);
+}
+.theme-default svg {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+  margin-top: -11px;
+  margin-left: -11px;
+  fill: #5f6368;
+}
+.theme-default .searchButton {
+  position: absolute;
+  padding: 5px;
+  width: 85px;
+  font-family: Arial;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  top: 80%;
+  right: 8px;
+  background-color: #39bef3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.theme-default .searchButton:hover {
+  background-color: #08a8e7;
+}
+.theme-default .logo {
+  position: absolute;
+  height: 196px;
+  width: 550px;
+  left: 50%;
+  top: 20%;
+  background-image: url("googlepng.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: -275px;
+  margin-top: -70px;
+  cursor: pointer;
+}
+.theme-default .box {
+  position: absolute;
+  height: 44px;
+  width: 584px;
+  left: 50%;
+  top: 65%;
+  background-color: white;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: -292px;
+  margin-top: -10px;
+}
+.theme-default .box-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  font-family: "icomoon";
+  background-color: white;
+  color: #757575;
+  margin: auto 0;
+  margin-left: 16px;
+}
+.theme-default .box-text {
+  width: 500px;
+  height: 44px;
+  position: absolute;
+  left: 40px;
+  line-height: 44px;
+  background-color: white;
+  color: #757575;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+.theme-default .box-microphone {
+  font-family: "icomoon";
+  font-size: 18px;
+  color: greenyellow;
+  background-color: white;
+  margin-right: 16px;
+  border: none;
+  cursor: pointer;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.theme-dark {
+  background-color: #464646;
+}
+.theme-dark * {
+  box-sizing: border-box;
+}
+.theme-dark .frame {
+  position: absolute;
+  height: 400px;
+  width: 600px;
+  left: 50%;
+  top: 64px;
+  margin-left: -300px;
+}
+.theme-dark .label {
+  position: absolute;
+  height: 48px;
+  width: 130px;
+  right: 16px;
+  top: 8px;
+}
+.theme-dark .email, .theme-dark .picture {
+  line-height: 48px;
+  font-size: x-small;
+  outline: none;
+  color: rgba(245, 245, 245, 0.87);
+  text-decoration: none;
+  padding-right: 8px;
+  padding-left: 4px;
+}
+.theme-dark .email:hover, .theme-dark .picture:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+.theme-dark .application {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 70%;
+  top: 6%;
+}
+.theme-dark .application:hover {
+  border-radius: 50%;
+  background-color: rgba(228, 228, 228, 0.25);
+}
+.theme-dark svg {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+  margin-top: -11px;
+  margin-left: -11px;
+  fill: #d8dfe7;
+}
+.theme-dark .searchButton {
+  position: absolute;
+  padding: 5px;
+  width: 85px;
+  font-family: Arial;
+  color: #464646;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  top: 80%;
+  right: 8px;
+  background-color: #0091ca;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.theme-dark .searchButton:hover {
+  background-color: #39bef3;
+}
+.theme-dark .logo {
+  position: absolute;
+  height: 196px;
+  width: 550px;
+  left: 50%;
+  top: 20%;
+  background-image: url("googlepng.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: -275px;
+  margin-top: -70px;
+  cursor: pointer;
+}
+.theme-dark .box {
+  position: absolute;
+  height: 44px;
+  width: 584px;
+  left: 50%;
+  top: 65%;
+  background-color: #464646;
+  box-shadow: 0 1px 6px 0 rgba(215, 222, 243, 0.28);
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: -292px;
+  margin-top: -10px;
+}
+.theme-dark .box-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  font-family: "icomoon";
+  background-color: #464646;
+  color: #ececec;
+  margin: auto 0;
+  margin-left: 16px;
+}
+.theme-dark .box-text {
+  width: 500px;
+  height: 44px;
+  position: absolute;
+  left: 40px;
+  line-height: 44px;
+  background-color: #464646;
+  color: #ececec;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+.theme-dark .box-microphone {
+  font-family: "icomoon";
+  font-size: 18px;
+  color: yellowgreen;
+  background-color: #464646;
+  margin-right: 16px;
+  border: none;
+  cursor: pointer;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot");
+  src: url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg");
+}
+
+/*# sourceMappingURL=google.css.map */
