@@ -20,6 +20,9 @@
   top: 8px;
 }
 .theme-default .email, .theme-default .picture {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   line-height: 48px;
   font-size: x-small;
   outline: none;
@@ -75,27 +78,27 @@
 }
 .theme-default .logo {
   position: absolute;
-  height: 196px;
   width: 550px;
   left: 50%;
-  top: 20%;
-  background-image: url("googlepng.png");
-  background-repeat: no-repeat;
   margin-left: -275px;
+  height: 196px;
+  top: 20%;
+  background-image: url("../img/googlepng.png");
+  background-repeat: no-repeat;
   margin-top: -70px;
   cursor: pointer;
 }
 .theme-default .box {
   position: absolute;
-  height: 44px;
   width: 584px;
   left: 50%;
+  margin-left: -292px;
+  height: 44px;
   top: 65%;
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   border-radius: 22px;
   line-height: 21px;
-  margin-left: -292px;
   margin-top: -10px;
 }
 .theme-default .box-icon {
@@ -117,7 +120,6 @@
   font-family: "Segoe UI", "Roboto", arial, sans-serif;
   width: 500px;
   height: 44px;
-  position: absolute;
   left: 40px;
   line-height: 44px;
   background-color: white;
@@ -162,6 +164,9 @@
   top: 8px;
 }
 .theme-dark .email, .theme-dark .picture {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   line-height: 48px;
   font-size: x-small;
   outline: none;
@@ -217,27 +222,27 @@
 }
 .theme-dark .logo {
   position: absolute;
-  height: 196px;
   width: 550px;
   left: 50%;
-  top: 20%;
-  background-image: url("googlepng.png");
-  background-repeat: no-repeat;
   margin-left: -275px;
+  height: 196px;
+  top: 20%;
+  background-image: url("../img/googlepng.png");
+  background-repeat: no-repeat;
   margin-top: -70px;
   cursor: pointer;
 }
 .theme-dark .box {
   position: absolute;
-  height: 44px;
   width: 584px;
   left: 50%;
+  margin-left: -292px;
+  height: 44px;
   top: 65%;
   background-color: #464646;
   box-shadow: 0 1px 6px 0 rgba(215, 222, 243, 0.28);
   border-radius: 22px;
   line-height: 21px;
-  margin-left: -292px;
   margin-top: -10px;
 }
 .theme-dark .box-icon {
@@ -259,7 +264,6 @@
   font-family: "Segoe UI", "Roboto", arial, sans-serif;
   width: 500px;
   height: 44px;
-  position: absolute;
   left: 40px;
   line-height: 44px;
   background-color: #464646;
@@ -284,8 +288,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot");
-  src: url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg");
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
 }
 
 /*# sourceMappingURL=google.css.map */

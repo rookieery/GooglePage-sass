@@ -15,6 +15,17 @@
     color: $color;
     font-family: $font-family;
 }
+@mixin absoluteCenter($width) {
+    position: absolute;
+    width: $width;
+    left: 50%;
+    margin-left: -($width/2);
+}
+@mixin ellipses {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 .frame{
     @include location(400px, 600px, 50%, 64px);
     margin-left: -300px;
@@ -28,6 +39,7 @@
     top: 8px;
 }
 .email,.picture{
+    @include ellipses;
     line-height: 48px;
     font-size: x-small;
     outline: none;
@@ -36,7 +48,7 @@
     padding-right: 8px;
     padding-left: 4px;
     &:hover{
-        opacity: .85;
+        opacity: 0.85;
         text-decoration: underline;
     }
 }
@@ -63,30 +75,30 @@ svg {
     text-decoration: none;
     top:80%;
     right: 8px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+   @include ellipses;
     box-shadow: 0 2px 6px 0 $searchButtonShadowColor;
     &:hover{
         background-color: $searchButtonBackgroundHoverColor;
     }
 }
 .logo {
-    @include location(196px, 550px, 50%, 20%);
-    background-image: url("googlepng.png");
+    @include absoluteCenter(550px);
+    height: 196px;
+    top: 20%;
+    background-image: url("../img/googlepng.png");
     background-repeat: no-repeat;
-    margin-left: -(550px/2);
     margin-top: -70px;
     cursor: pointer;
 }
 
 .box {
-    @include location(44px,584px,50%,65%);
+    @include absoluteCenter(584px);
+    height: 44px;
+    top: 65%;
     background-color:$boxBackgroundColor; 
     box-shadow: 0 1px 6px 0 $boxShadowColor;
     border-radius: 22px;
     line-height: 21px;
-    margin-left: -292px;
     margin-top: -10px;
 }
 
@@ -105,7 +117,6 @@ svg {
     @include graphics($boxBackgroundColor,$textColor,$font-family);
     width: 500px;
     height: 44px;
-    position: absolute;
     left: 40px;
     line-height: 44px;
     background-color:$boxBackgroundColor; 
