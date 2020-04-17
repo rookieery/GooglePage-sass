@@ -55,22 +55,23 @@
 }
 .theme-default .searchButton {
   position: absolute;
+  background-color: #39b3e4;
+  color: white;
+  font-family: Arial;
   padding: 5px;
   width: 85px;
-  font-family: Arial;
-  color: white;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
   top: 80%;
   right: 8px;
-  background-color: #39bef3;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  box-shadow: 0 2px 6px 0 rgba(32, 33, 36, 0.4);
 }
 .theme-default .searchButton:hover {
-  background-color: #08a8e7;
+  background-color: #0587bb;
 }
 .theme-default .logo {
   position: absolute;
@@ -80,7 +81,6 @@
   top: 20%;
   background-image: url("googlepng.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   margin-left: -275px;
   margin-top: -70px;
   cursor: pointer;
@@ -94,24 +94,27 @@
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   border-radius: 22px;
-  font-size: 16px;
   line-height: 21px;
   margin-left: -292px;
   margin-top: -10px;
 }
 .theme-default .box-icon {
-  width: 24px;
-  height: 24px;
   position: absolute;
-  bottom: 0;
-  top: 0;
-  font-family: "icomoon";
   background-color: white;
   color: #757575;
-  margin: auto 0;
+  font-family: "icomoon";
+  width: 24px;
+  height: 24px;
+  bottom: 0;
+  top: 0;
   margin-left: 16px;
+  margin-top: 12px;
 }
 .theme-default .box-text {
+  position: absolute;
+  background-color: white;
+  color: #757575;
+  font-family: "Segoe UI", "Roboto", arial, sans-serif;
   width: 500px;
   height: 44px;
   position: absolute;
@@ -122,18 +125,17 @@
   font-size: 16px;
   border: none;
   outline: none;
-  overflow: hidden;
 }
 .theme-default .box-microphone {
+  position: absolute;
+  background-color: white;
+  color: greenyellow;
   font-family: "icomoon";
   font-size: 18px;
-  color: greenyellow;
-  background-color: white;
   margin-right: 16px;
   border: none;
   cursor: pointer;
   bottom: 0;
-  position: absolute;
   right: 0;
   top: 0;
 }
@@ -195,19 +197,20 @@
 }
 .theme-dark .searchButton {
   position: absolute;
+  background-color: #0074a1;
+  color: #464646;
+  font-family: Arial;
   padding: 5px;
   width: 85px;
-  font-family: Arial;
-  color: #464646;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
   top: 80%;
   right: 8px;
-  background-color: #0091ca;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  box-shadow: 0 2px 6px 0 rgba(215, 222, 243, 0.4);
 }
 .theme-dark .searchButton:hover {
   background-color: #39bef3;
@@ -220,7 +223,6 @@
   top: 20%;
   background-image: url("googlepng.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   margin-left: -275px;
   margin-top: -70px;
   cursor: pointer;
@@ -234,24 +236,27 @@
   background-color: #464646;
   box-shadow: 0 1px 6px 0 rgba(215, 222, 243, 0.28);
   border-radius: 22px;
-  font-size: 16px;
   line-height: 21px;
   margin-left: -292px;
   margin-top: -10px;
 }
 .theme-dark .box-icon {
-  width: 24px;
-  height: 24px;
   position: absolute;
-  bottom: 0;
-  top: 0;
-  font-family: "icomoon";
   background-color: #464646;
   color: #ececec;
-  margin: auto 0;
+  font-family: "icomoon";
+  width: 24px;
+  height: 24px;
+  bottom: 0;
+  top: 0;
   margin-left: 16px;
+  margin-top: 12px;
 }
 .theme-dark .box-text {
+  position: absolute;
+  background-color: #464646;
+  color: #ececec;
+  font-family: "Segoe UI", "Roboto", arial, sans-serif;
   width: 500px;
   height: 44px;
   position: absolute;
@@ -262,18 +267,17 @@
   font-size: 16px;
   border: none;
   outline: none;
-  overflow: hidden;
 }
 .theme-dark .box-microphone {
+  position: absolute;
+  background-color: #464646;
+  color: yellowgreen;
   font-family: "icomoon";
   font-size: 18px;
-  color: yellowgreen;
-  background-color: #464646;
   margin-right: 16px;
   border: none;
   cursor: pointer;
   bottom: 0;
-  position: absolute;
   right: 0;
   top: 0;
 }

@@ -7,12 +7,11 @@ $labelApplicationHoverColor:rgba(60,64,67,0.08);
 $iconColor:rgb(117, 117, 117);
 $textColor:rgb(117, 117, 117);
 $microphoneColor:greenyellow;
-$boxShadowColor:rgba(32, 33, 36, .28);
+$boxShadowColor:rgba(32, 33, 36, 0.28);
 $searchButtonTextColor: white;
-$searchButtonBackgroundColor:rgb(57, 190, 243);
-$searchButtonBackgroundHoverColor:rgb(8, 168, 231);
-
-
+$searchButtonBackgroundColor:rgb(57, 179, 228);
+$searchButtonBackgroundHoverColor:rgb(5, 135, 187);
+$searchButtonShadowColor:rgba(32, 33, 36, 0.4);
 .theme-default {
     @import './variables.scss';
     background-color: $bodyBackgroundColor

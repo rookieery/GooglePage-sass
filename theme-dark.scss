@@ -9,9 +9,9 @@ $textColor:rgb(236, 236, 236);
 $microphoneColor:yellowgreen;
 $boxShadowColor:rgba(215, 222, 243, 0.28);
 $searchButtonTextColor: rgb(70, 70, 70);
-$searchButtonBackgroundColor:rgb(0, 145, 202);
+$searchButtonBackgroundColor:rgb(0, 116, 161);
 $searchButtonBackgroundHoverColor:rgb(57, 190, 243);
-
+$searchButtonShadowColor:rgba(215, 222, 243, 0.4);
 .theme-dark {
     @import './variables.scss';
     background-color: $bodyBackgroundColor

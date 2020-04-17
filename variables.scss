@@ -9,10 +9,17 @@
     left: $left;
     top: $top;
 }
+@mixin graphics($background-color,$color,$font-family) {
+    position: absolute;
+    background-color: $background-color;
+    color: $color;
+    font-family: $font-family;
+}
 .frame{
     @include location(400px, 600px, 50%, 64px);
     margin-left: -300px;
 }
+
 .label{
     position: absolute;
     height: 48px;
@@ -28,17 +35,18 @@
     text-decoration: none;
     padding-right: 8px;
     padding-left: 4px;
+    &:hover{
+        opacity: .85;
+        text-decoration: underline;
+    }
 }
-.email:hover,.picture:hover{
-    opacity: .85;
-    text-decoration: underline;
-}
+
 .application{
     @include location(40px, 40px,70%, 6%);
-}
-.application:hover{
-    border-radius: 50%;
-    background-color: $labelApplicationHoverColor;
+    &:hover{
+        border-radius: 50%;
+        background-color: $labelApplicationHoverColor;
+    }
 }
 svg {
     @include location(20px, 20px,50%, 50%);
@@ -47,29 +55,26 @@ svg {
     fill:$labelSvgColor;
 }
 .searchButton{
-    position: absolute;
+    @include graphics($searchButtonBackgroundColor,$searchButtonTextColor,Arial);
     padding: 5px;
     width: 85px;
-    font-family: Arial;
-    color: $searchButtonTextColor;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
     top:80%;
     right: 8px;
-    background-color: $searchButtonBackgroundColor;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-.searchButton:hover{
-    background-color: $searchButtonBackgroundHoverColor;
+    box-shadow: 0 2px 6px 0 $searchButtonShadowColor;
+    &:hover{
+        background-color: $searchButtonBackgroundHoverColor;
+    }
 }
 .logo {
     @include location(196px, 550px, 50%, 20%);
     background-image: url("googlepng.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     margin-left: -(550px/2);
     margin-top: -70px;
     cursor: pointer;
@@ -80,26 +85,24 @@ svg {
     background-color:$boxBackgroundColor; 
     box-shadow: 0 1px 6px 0 $boxShadowColor;
     border-radius: 22px;
-    font-size: 16px;
     line-height: 21px;
     margin-left: -292px;
     margin-top: -10px;
 }
 
 .box-icon {
+    @include graphics($boxBackgroundColor,$iconColor,"icomoon");
     width: 24px;
     height: 24px;
-    position: absolute;
     bottom: 0;
     top: 0;
-    font-family: "icomoon";
-    background-color: $boxBackgroundColor; 
-    color:$iconColor; 
-    margin: auto 0;
     margin-left: 16px;
+    margin-top: 12px;
 }
 
 .box-text {
+    $font-family : 'Segoe UI', 'Roboto', arial, sans-serif;
+    @include graphics($boxBackgroundColor,$textColor,$font-family);
     width: 500px;
     height: 44px;
     position: absolute;
@@ -110,19 +113,15 @@ svg {
     font-size: 16px;
     border: none;
     outline: none;
-    overflow: hidden;
 }
 
 .box-microphone {
-    font-family: "icomoon";
+    @include graphics($boxBackgroundColor,$microphoneColor,"icomoon");
     font-size: 18px;
-    color:$microphoneColor;
-    background-color: $boxBackgroundColor; 
     margin-right: 16px;
     border: none;
     cursor: pointer;
     bottom: 0;
-    position: absolute;
     right: 0;
     top: 0;
 }
